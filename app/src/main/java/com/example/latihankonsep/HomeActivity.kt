@@ -24,6 +24,7 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
             val selectedValue =
                 it.data?.getStringExtra(PostQutesActivity.EXTRA_SELECTED_VALUE)
             listQuotes.add(selectedValue!!)
+            showRecycleList()
         }
     }
 
