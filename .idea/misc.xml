@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/edittextbackground.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_group_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_mark_chat_unread_24.xml" value="0.1" />
@@ -10,8 +11,16 @@
         <entry key="app/src/main/res/drawable/ic_baseline_remove_red_eye_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_shopping_bag_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_latihan_fragment.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_post_qutes.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_edit_profile.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/listquotes.xml" value="0.25" />
       </map>
     </option>
   </component>
