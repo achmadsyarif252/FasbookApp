@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.navigation.Navigation
 import com.example.latihankonsep.databinding.ActivityMainBinding
 
 const val NAME = "com.latihankonsep.app"
