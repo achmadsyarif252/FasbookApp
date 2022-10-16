@@ -1,49 +1,37 @@
 package com.example.latihankonsep
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.TextView
+import androidx.navigation.findNavController
+import com.example.latihankonsep.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
-    private lateinit var btnEditProfile: Button
-    private lateinit var tvUsername: TextView
+    private var _binding: FragmentProfileBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
-        tvUsername = view.findViewById(R.id.usn)
-        btnEditProfile = view.findViewById(R.id.btnEditProfile)
-
         if (arguments != null) {
-            val updateUsn = arguments?.getString(EXTRA_USERNAME)
-            tvUsername.text = updateUsn
+            val updateUsn = ProfileFragmentArgs.fromBundle(arguments as Bundle).recentUsername
+            binding.usn.text = updateUsn
         }
-        btnEditProfile.setOnClickListener {
 
-            val fragment = EditProfileFragment()
-            val mFragmentManager = parentFragmentManager
-            mFragmentManager?.beginTransaction()?.apply {
-                replace(R.id.frameContainer, fragment, EditProfileFragment::class.java.simpleName)
-                commit()
-            }
+        binding.btnEditProfile.setOnClickListener {
+            view.findNavController().navigate(R.id.action_profileFragment4_to_editProfileFragment2)
         }
+
         super.onViewCreated(view, savedInstanceState)
-    }
-
-    companion object {
-        const val EXTRA_USERNAME = "EXTRA_USNNAME"
     }
 
 }

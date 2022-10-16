@@ -19,8 +19,9 @@
         <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_edit_profile.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19375" />
-        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/fragment_profile_.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/listquotes.xml" value="0.25" />
       </map>
     </option>

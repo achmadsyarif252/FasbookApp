@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.latihankonsep.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="Achmad" />
+        <action
+            android:id="@+id/action_homeFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.latihankonsep.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <argument
+            android:name="default_name"
+            app:argType="string"
+            android:defaultValue="Achmad Syarif" />
+        <action
+            android:id="@+id/action_menuFragment_to_postQutesActivity2"
+            app:destination="@id/postQutesActivity2" />
+        <action
+            android:id="@+id/action_menuFragment_to_profileFragment4"
+            app:destination="@id/profileFragment4" />
+    </fragment>
+    <activity
+        android:id="@+id/postQutesActivity2"
+        android:name="com.example.latihankonsep.PostQutesActivity"
+        android:label="activity_post_qutes"
+        tools:layout="@layout/activity_post_qutes" />
+    <fragment
+        android:id="@+id/profileFragment4"
+        android:name="com.example.latihankonsep.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment4_to_editProfileFragment2"
+            app:destination="@id/editProfileFragment2" />
+        <argument
+            android:name="recent_username"
+            app:argType="string"
+            android:defaultValue="Achmad Syarif" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment2"
+        android:name="com.example.latihankonsep.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment2_to_profileFragment4"
+            app:destination="@id/profileFragment4"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/profileFragment4"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
