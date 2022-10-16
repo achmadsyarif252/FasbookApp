@@ -8,6 +8,7 @@ import androidx.navigation.Navigation
 import com.example.latihankonsep.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    //Achmad Syarif - OKt 16 2022
     private lateinit var activityMainBinding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
