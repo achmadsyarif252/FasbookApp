@@ -7,8 +7,6 @@ import android.view.View
 import androidx.navigation.Navigation
 import com.example.latihankonsep.databinding.ActivityMainBinding
 
-const val NAME = "com.latihankonsep.app"
-
 class MainActivity : AppCompatActivity() {
     private lateinit var activityMainBinding: ActivityMainBinding
 
